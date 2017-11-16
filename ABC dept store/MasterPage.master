@@ -1,0 +1,279 @@
+<%@ Master Language="C#" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+
+    }
+    string s;
+    protected void Menu1_MenuItemClick(object sender, MenuEventArgs e)
+    {
+        s=Menu1.SelectedItem.Text;
+        Response.Write("s:" + s);
+        if (s.Equals("Administrator"))
+            Response.Redirect("AdminLogin.aspx");
+        else if (s.Equals("Product Manager"))
+            Response.Redirect("PrdtMngr.aspx");
+         else if (s.Equals("Billing"))
+             Response.Redirect("Billing.aspx");
+        else if(s.Equals("Employee"))
+            Response.Redirect("Employee.aspx");
+        else if(s.Equals("Contact Us"))
+            Response.Redirect("Contact.aspx");
+    }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div style="background-color: papayawhip">
+        &nbsp;
+        <asp:Image ID="Image1" runat="server" Height="136px" Style="z-index: 100; left: 14px;
+            position: absolute; top: 20px" Width="159px" ImageUrl="~/abc.JPG" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Image ID="Image2" runat="server" Style="position: absolute; z-index: 101; left: 937px; top: 11px;" Height="138px" Width="219px" ImageUrl="~/pic.JPG" />
+        <asp:Label ID="Label1" runat="server" Height="54px" Style="z-index: 102; left: 311px;
+            position: absolute; top: 16px" Text="ABC DEPARTMENTAL STORE" Width="493px" BackColor="#C00000" Font-Bold="True" Font-Size="XX-Large" ForeColor="White"></asp:Label>
+        <br />
+        <asp:Label ID="Label2" runat="server" BackColor="#C00000" Font-Bold="True" ForeColor="White"
+            Height="30px" Style="z-index: 103; left: 426px; position: absolute; top: 74px"
+            Text="23,Anna Nagar,Madurai-625010" Width="243px"></asp:Label>
+        <asp:Label ID="Label3" runat="server" BackColor="#C00000" Font-Bold="True" ForeColor="White"
+            Height="21px" Style="z-index: 104; left: 430px; position: absolute; top: 106px"
+            Text="Ph:0452-2334455,0452-2334456" Width="238px"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:Menu ID="Menu1" runat="server" BackColor="#FFFBD6" DynamicHorizontalOffset="2"
+            Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" Orientation="Horizontal"
+            StaticSubMenuIndent="10px" Style="z-index: 106; left: 22px; position: absolute;
+            top: 164px" Width="1163px" Height="29px" OnMenuItemClick="Menu1_MenuItemClick">
+            <StaticSelectedStyle BackColor="#FFCC66" />
+            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <DynamicHoverStyle BackColor="#990000" ForeColor="White" />
+            <DynamicMenuStyle BackColor="#FFFBD6" />
+            <DynamicSelectedStyle BackColor="#FFCC66" />
+            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+            <StaticHoverStyle BackColor="#990000" ForeColor="White" />
+            <Items>
+                <asp:MenuItem Text="Administrator" Value="Administrator"></asp:MenuItem>
+                <asp:MenuItem Text="Product Manager" Value="Product Manager"></asp:MenuItem>
+                <asp:MenuItem Text="Billing" Value="Billing"></asp:MenuItem>
+                <asp:MenuItem Text="Employee" Value="Employee">
+                </asp:MenuItem>
+                <asp:MenuItem Text="Contact Us" Value="Contact Us"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <br />
+        <br />
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            <br />
+            <br />
+            <br />
+            <br />
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp;
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+        </asp:contentplaceholder>
+        <br />
+        &nbsp;</div>
+    </form>
+</body>
+</html>
